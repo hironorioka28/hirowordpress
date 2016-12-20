@@ -13,8 +13,8 @@
     bottom: 0;
     left: 0;
     background: inherit;
-    filter: blur(10px);
-    transform: scale(1.1);
+    filter: blur(6px);
+    transform: scale(1.02);
   }
   &__title {
     margin-bottom: 20px;
@@ -22,5 +22,19 @@
     font-weight: 400;
     text-align: center;
     letter-spacing: .8rem;
+  }
+  &__more {
+    margin-top: 12px;
+    padding: 8px 0;
+    background-color: rgba($white-l, .2);
+    display: block;
+    border: 1px solid $white-l;
+    border-radius: 4px;
+    text-align: center;
+    color: $white-l;
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: .8rem;
+    text-decoration: none;
   }
 }
