@@ -19,7 +19,7 @@
       <section class="update">
         <h2 class="update__title">RECENT UPDATE</h2>
         <div class="update__list">
-          <?php query_posts('posts_per_page = 5'); ?>
+          <?php query_posts('posts_per_page=5'); ?>
           <ul class="updateList">
             <?php while (have_posts()) : the_post(); ?>
               <li class="updateList__item">
