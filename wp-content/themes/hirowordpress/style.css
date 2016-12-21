@@ -1,0 +1,35 @@
+/*
+Theme Name: hirowordpress
+Description: theme for hirowordpress
+Author: hironorioka28
+Version: 1.0
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+* { box-sizing: border-box; position: relative; }
+
+html { font-family: Roboto, "Hiragino Sans"; font-size: 62.5%; color: #333; }
+
+.page { width: 100vw; height: 100vh; background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(http://res.cloudinary.com/hiro28/image/upload/q_auto:good/v1482033682/IMG_1559_tfzutb.jpg); background-repeat: no-repeat; background-size: cover; background-position: center top; background-attachment: fixed; }
+.page__wrapper { background: inherit; display: flex; flex-direction: column; align-items: center; }
+.page__header { margin: 20vh 0; }
+.page__contents { background: inherit; }
+.page__footer { margin-top: 100px; }
+
+.header__title { color: #fff; font-size: 10vw; font-weight: 100; letter-spacing: .5rem; }
+
+.update { width: calc(100vw - 20px); padding: 12px; background: inherit; border-radius: 4px; position: relative; overflow: hidden; }
+.update::before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: inherit; filter: blur(6px); transform: scale(1.02); }
+.update__title { margin-bottom: 20px; color: #fff; font-weight: 400; text-align: center; letter-spacing: .8rem; }
+.update__more { margin-top: 12px; padding: 8px 0; background-color: rgba(255, 255, 255, 0.2); display: block; border: 1px solid #fff; border-radius: 4px; text-align: center; color: #fff; font-size: 1.8rem; font-weight: 200; letter-spacing: .8rem; text-decoration: none; }
+
+.updateList { list-style-type: none; }
+.updateList__item { margin-bottom: 8px; }
+.updateList__item:last-child { margin-bottom: 0; }
+.updateList__link { display: flex; align-items: center; background-color: rgba(255, 255, 255, 0.6); border-radius: 4px; text-decoration: none; }
+.updateList__imgWrapper { flex-shrink: 0; width: 100px; height: 100px; border-radius: 4px 0 0 4px; background-repeat: no-repeat; background-size: cover; background-position: center top; }
+.updateList__titleWrapper { margin: 0 8px; }
+.updateList__title { margin-bottom: 4px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: 1.4rem; line-height: 1.4; font-weight: 600; color: #333; }
+.updateList__date { font-size: 1.2rem; color: #555; }
+
+.footer { height: 200px; width: 100vw; display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.8); }
+.footer__text { color: #fff; }
