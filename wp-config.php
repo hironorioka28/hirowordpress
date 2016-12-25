@@ -27,15 +27,19 @@
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
 define('DB_NAME', $_ENV['DB_NAME']);
+//define('DB_NAME', 'hirowordpress');
 
 /** MySQL データベースのユーザー名 */
 define('DB_USER', $_ENV['DB_USER']);
+//define('DB_USER', 'hirowordpress');
 
 /** MySQL データベースのパスワード */
 define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
+//define('DB_PASSWORD', 'hirowordpress');
 
 /** MySQL のホスト名 */
 define('DB_HOST', $_ENV['DB_HOST']);
+//define('DB_HOST', 'localhost');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');
