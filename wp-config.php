@@ -25,21 +25,28 @@
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
-/** WordPress のためのデータベース名 */
-define('DB_NAME', $_ENV['DB_NAME']);
-//define('DB_NAME', 'hirowordpress');
+if ($_SERVER['HTTP_HOST'] === 'localhost:8888') {
+    /** WordPress のためのデータベース名 */
+    define('DB_NAME', 'hirowordpress');
+    /** MySQL データベースのユーザー名 */
+    define('DB_USER', 'hirowordpress');
+    /** MySQL データベースのパスワード */
+    define('DB_PASSWORD', 'hirowordpress');
+    /** MySQL のホスト名 */
+    define('DB_HOST', 'localhost');
+} else {
+    /** WordPress のためのデータベース名 */
+    define('DB_NAME', $_ENV['DB_NAME']);
+    /** MySQL データベースのユーザー名 */
+    define('DB_USER', $_ENV['DB_USER']);
+    /** MySQL データベースのパスワード */
+    define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
+    /** MySQL のホスト名 */
+    define('DB_HOST', $_ENV['DB_HOST']);
+}
 
-/** MySQL データベースのユーザー名 */
-define('DB_USER', $_ENV['DB_USER']);
-//define('DB_USER', 'hirowordpress');
 
-/** MySQL データベースのパスワード */
-define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
-//define('DB_PASSWORD', 'hirowordpress');
 
-/** MySQL のホスト名 */
-define('DB_HOST', $_ENV['DB_HOST']);
-//define('DB_HOST', 'localhost');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');
